@@ -37,10 +37,10 @@ connection.once("open", () => {
 });
 
 //Routes files
-const usersRoutes = require("../backend/routes/users");
-const authRoutes = require("../backend/routes/auth");
-const recipeRoutes = require("../backend/routes/recipe");
-const favouriteRoutes = require ("../backend/routes/favourite");
+const usersRoutes = require("./routes/users");
+const authRoutes = require("./routes/auth");
+const recipeRoutes = require("./routes/recipe");
+const favouriteRoutes = require ("./routes/favourite");
 
 //Adding routes middleware
 app.use("/api/v1/user", usersRoutes);
